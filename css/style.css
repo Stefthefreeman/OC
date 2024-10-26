@@ -253,7 +253,10 @@ footer{
 .footer-block{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    text-align: left;
+}
+.footer-block ul{
+    padding: 0;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
