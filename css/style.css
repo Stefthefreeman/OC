@@ -250,7 +250,7 @@ footer{
     justify-content: space-around;
     background-color: var(--main-bg-color);
 }
-.footer-container{
+.footer-block{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
