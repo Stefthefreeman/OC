@@ -75,7 +75,8 @@ a {
 .hebergements {
     width: 65%;
 }
-.hebergements img{
+
+.hebergements img {
     width: 250px;
     height: 160px;
     border-top-left-radius: 20px;
@@ -148,11 +149,13 @@ nav ul {
 
 nav li {
     margin-left: 20px;
-    padding-top:10px;
+    padding-top: 10px;
 }
+
 .active {
-    border-top:2px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
+
 nav > * {
     justify-content: flex-end;
 }
@@ -206,37 +209,45 @@ input {
     padding: 15px;
     border-radius: 20px;
 }
-.filter-container li:hover{
+
+.filter-container li:hover {
     background-color: var(--filter-bg-color);
 }
+
 .filter-container a {
     cursor: pointer;
 }
+
 /*********** Activity ************/
-.activity-container{
+.activity-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
 .activity-container img {
     width: 300px;
     height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.activity-container .card{
-    background-color: var(--filter-bg-color);
+
+.activity-container .card {
+    background-color: var(--main-bg-color);
 }
-.activity-container h3{
-    margin-left:15px;
+
+.activity-container .card-txt {
+    margin-left: 15px;
 }
+
 /*********** cards **************/
-.cards{
+.cards {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 /*********** icon ***************/
 .i-2x {
     background-color: #dedede;
@@ -244,19 +255,27 @@ input {
     padding: 10px;
     border-radius: 10px 0 0 10px
 }
+
 /************ footer ***********/
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     background-color: var(--main-bg-color);
 }
-.footer-block{
+
+.footer-block {
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding: 10px
 }
-.footer-block ul{
+
+.footer-block ul {
     padding: 0;
+    list-style-type: none;
+}
+.footer-block li {
+    margin-top: 10px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
