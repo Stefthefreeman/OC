@@ -191,7 +191,7 @@ input {
 .filter-container ul li {
     list-style-type: none;
     margin-left: 20px;
-    border: 1px solid var(--main-bg-color);
+    border: 2px solid var(--main-bg-color);
     padding: 15px;
     border-radius: 20px;
 }
@@ -201,7 +201,17 @@ input {
 .filter-container a {
     cursor: pointer;
 }
-
+/*********** cards **************/
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards img{
+    width: 100%;
+    height:auto;
+    border-radius: 10px 10px 0 0 ;
+    object-fit: cover;
+}
 /*********** icon ***************/
 .i-2x {
     background-color: #dedede;
