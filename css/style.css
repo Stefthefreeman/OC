@@ -325,6 +325,34 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /*********** filter *************/
+    .filter-container {
+        display: flex;
+    }
+
+    .filter-container ul {
+        display: flex;
+    }
+
+    .filter-container ul li {
+        list-style-type: none;
+        margin-left: 20px;
+        border: 2px solid var(--main-bg-color);
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .filter-container a{
+        font-size:12px;
+    }
+
+    .filter-container li:hover {
+        background-color: var(--filter-bg-color);
+    }
+
+    .filter-container a {
+        cursor: pointer;
+    }
+
     /*********** Activity ************/
     .activity-container {
         display: flex;
@@ -333,10 +361,11 @@ footer {
     }
     .activity-container a{
         width: 100%;
+        height:auto;
     }
     .activity-container img {
-        width: 150px;
-        height: 250px;
+        width: 200px;
+        height: 220px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -348,6 +377,10 @@ footer {
 
     .activity-container h3 {
         font-size:15px;
+        padding:0;
+    }
+    .card-txt{
+        margin-left:0;
     }
 }
 
