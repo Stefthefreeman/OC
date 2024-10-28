@@ -201,9 +201,10 @@ input {
 
 .filter-container ul {
     display: flex;
+    padding:0;
 }
 
-.filter-container ul li {
+.filter-container  li {
     list-style-type: none;
     margin-left: 20px;
     border: 2px solid var(--main-bg-color);
@@ -427,18 +428,25 @@ footer {
     .filter-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .filter-container ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .filter-container li {
         margin-top: 10px;
         width: 60%;
     }
-
+    .filter-container li:nth-child(2n) {
+        margin-right: 0;
+    }
+    .filter-container li:nth-child(2)::after {
+        content: "";
+        display: block;
+    }
     .filter-container-title {
         text-align: center;
     }
@@ -477,15 +485,24 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-left: 0;
-        padding-right: 0;
+        align-items: center;
+        text-align: center;
 
     }
-
     .active {
         border-top: none;
+        padding-top:0;
+        border-bottom:2px solid var(--main-color);
+        width:100%;
+        padding-bottom:20px
     }
-
+    .inactive{
+        border-top: none;
+        padding-top:0;
+        border-bottom:2px solid var(--main-bg-color);
+        width:100%;
+        padding-bottom:20px
+    }
     /*********** Footer **********/
     footer {
         display: flex;
