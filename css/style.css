@@ -487,7 +487,9 @@ footer {
         width: 100%;
         object-fit: cover;
     }
-
+    .hebergements .card{
+        width:100%;
+    }
 
     .hebergements {
         width: 100%;
@@ -496,6 +498,7 @@ footer {
     .populaires-cards {
         display: flex;
         flex-direction: column;
+
     }
 
     .populaires-cards a {
