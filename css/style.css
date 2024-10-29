@@ -247,12 +247,13 @@ input {
 }
 
 .activity-container .card {
-    background-color: var(--main-bg-color);
+
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .activity-container .card-txt {
     margin-left: 15px;
+
 }
 
 /*********** cards **************/
@@ -397,7 +398,6 @@ footer {
     .activity-container .card {
         background-color: var(--main-bg-color);
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        /*border: 1px solid #000;*/
         height: 275px;
     }
 
@@ -430,7 +430,7 @@ footer {
         width:150px;
     }
     .btn-submit {
-        border-radius: 20px;
+        border-radius: 50px;
         padding: 10px 20px;
     }
 
