@@ -436,9 +436,14 @@ footer {
 
     /*********** Activity ************/
     .activity-container {
+        background-color: var(--main-bg-color);
+        border-radius:20px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
+        padding:20px;
+        justify-content: center;
+
     }
 
     .activity-container img {
@@ -449,11 +454,12 @@ footer {
     }
 
     .activity-container .card {
-        background-color: var(--main-bg-color);
+        background-color: white;
+        width:100%;
     }
 
-    .activity-container .card-txt {
-        margin-left: 10px;
+    .activity-container a{
+        width: 100%;
     }
 
     /*********** Filter ***********/
