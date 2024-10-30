@@ -427,7 +427,7 @@ footer {
         display: block;
         color: white;
         padding: 5px;
-        border-radius: 10px !important;
+        border-radius: 10px;
     }
     input[type="text"] {
         width:150px;
