@@ -154,11 +154,14 @@ nav li {
     margin-left: 20px;
 }
 
-.active {
+.active:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 20px;
 }
-
+.inactive:hover {
+    border-top: 2px solid var(--main-color);
+    padding-top: 20px;
+}
 nav > * {
     justify-content: flex-end;
 }
