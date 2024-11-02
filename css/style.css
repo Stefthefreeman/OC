@@ -145,7 +145,6 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    margin: 0;
 
 }
 
@@ -425,6 +424,11 @@ footer {
         padding:0;
         margin:0;
         justify-content: center;
+    }
+    /*********** nav *****************/
+    nav li{
+        width:100%;
+        margin:0;
     }
     /*********** form ****************/
     .form-container{
