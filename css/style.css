@@ -320,9 +320,6 @@ footer {
     .card {
         width: 90%;
     }
-    .card img{
-        transform:scale(1.2);
-    }
     .hebergements a {
         width: 100%;
     }
