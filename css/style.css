@@ -45,7 +45,9 @@ a {
 .card img {
     object-fit: cover;
 }
-
+.card:hover img{
+    transform:scale(1.2);
+}
 .card-title {
     font-size: 16px;
 }
