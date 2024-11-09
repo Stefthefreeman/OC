@@ -710,22 +710,6 @@ footer {
         border-bottom: 2px solid var(--main-color);
         color: var(--main-color);
     }
-
-    .inactive {
-        border-top: none;
-        width: 100%;
-        padding-top: 0;
-        border-bottom: 2px solid var(--main-bg-color);
-        padding-bottom: 20px;
-    }
-
-    .inactive:hover {
-        padding-top: 0;
-        border-top: none;
-        border-bottom: 2px solid var(--main-color);
-        color: var(--main-color);
-    }
-
     /*********** Footer **********/
     footer {
         display: flex;
