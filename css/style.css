@@ -163,11 +163,6 @@ nav li {
     padding-top: 20px;
 }
 
-.inactive:hover {
-    border-top: 2px solid var(--main-color);
-    padding-top: 20px;
-}
-
 nav > * {
     justify-content: flex-end;
 }
@@ -291,10 +286,10 @@ input {
 
 /************ footer ***********/
 footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--main-bg-color);
-    align-items: flex-start;
+
 }
 
 .footer-block {
