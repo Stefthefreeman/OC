@@ -189,9 +189,6 @@
     .filter-container{
         margin:0;
     }
-    .filter-container ul{
-        display: flex;
-    }
     .filter-container li > * {
         display: flex;
         padding: 5px;
@@ -200,7 +197,7 @@
 
     }
     input[type=text] {
-        width: 52%;
+        width: 60%;
     }
 
     .hebergements a{
