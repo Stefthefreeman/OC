@@ -1,8 +1,10 @@
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
+
     .main-container {
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
+        width: 100%;
+        justify-content: center;
     }
 
     /*********** nav *****************/
@@ -13,8 +15,7 @@
 
     /*********** form ****************/
     .form-container {
-        width: 100%;
-        justify-content: center;
+        width: 335px;
     }
 
     .form-container .i-search {
@@ -22,10 +23,11 @@
         color: white;
         padding: 5px;
     }
-
     .btn-submit {
-        border-radius: 20px;
+        border-radius: 15px;
         padding: 5px 10px;
+        width:49px;
+        height: 49px;
     }
 
     /*********** Activity ************/
@@ -57,25 +59,25 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
     }
 
     .filter-container ul {
         display: flex;
         flex-direction: row;
-        width: 100%;
         margin-top: 0;
-        justify-content: left;
     }
 
     .filter-container li > * {
         display: flex;
         padding: 5px;
-        font-size: 20px;
-        width: 200px;
+        font-size: 14px;
+        width: 162px;
     }
 
     /********** Hebergement and populaires **********/
     .hebergements-and-populaires {
+        width: 100%;
         flex-direction: column-reverse;
         justify-content: center;
         gap: 20px;
@@ -92,13 +94,15 @@
     }
 
     .hebergements {
-        width: 100%;
+        border-radius:0;
     }
-
+    .populaires{
+        border-radius:0 !important;
+    }
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .populaires-cards a {
@@ -119,15 +123,9 @@
         align-items: center;
     }
 
-    /********** form **************/
     .no-display {
         display: none;
     }
-
-    .form-container {
-        width: 20px;
-    }
-
     /********** cards *************/
     .cards {
         width: 100%;
@@ -176,4 +174,29 @@
         background-color: var(--main-bg-color);
     }
 
+}
+@media (max-width: 320px) {
+    .hebergements{
+        border-radius:0 !important;
+    }
+    .filter-container{
+        margin:0;
+    }
+    .filter-container ul{
+        display: flex;
+    }
+    .filter-container li > * {
+        display: flex;
+        padding: 5px;
+        font-size: 14px;
+        width:98px;
+
+    }
+    input[type=text] {
+        width: 52%;
+    }
+
+    .hebergements a{
+        width: 100%;
+    }
 }
