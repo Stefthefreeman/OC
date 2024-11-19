@@ -51,7 +51,10 @@
     }
 
     /*********** filter *************/
-
+    .filter-title{
+        display: flex;
+        flex-direction: column;
+    }
     .filter-container ul {
         display: flex;
         justify-content: space-between;
@@ -68,7 +71,7 @@
     }
 
     .filter-container a {
-        /*font-size: 12px*/;
+        font-size: 19px;
     }
 
     .filter-container li:hover {

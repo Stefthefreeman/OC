@@ -234,6 +234,7 @@ input[type=text] {
 .filter-container {
     display: flex;
     align-items: center;
+    position:relative;
 }
 
 .filter-container ul {

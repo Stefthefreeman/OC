@@ -6,6 +6,12 @@
         width: 100%;
         justify-content: center;
     }
+    .main {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
 
     /*********** nav *****************/
     nav li {
@@ -15,7 +21,8 @@
 
     /*********** form ****************/
     .form-container {
-        width: 335px;
+        width: 100%;
+        justify-content: center;
     }
 
     .form-container .i-search {
@@ -175,7 +182,7 @@
     }
 
 }
-@media (max-width: 320px) {
+@media (max-width: 320px){
     .hebergements{
         border-radius:0 !important;
     }
