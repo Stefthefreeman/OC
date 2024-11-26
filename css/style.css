@@ -13,14 +13,15 @@
 .fa-solid {
     color: var(--main-color);
 }
-.fa-info{
-    width:24px;
-    height:24px;
-    padding:5px 5px 0 5px;
-    text-align:center;
+
+.fa-info {
+    width: 24px;
+    height: 24px;
+    padding: 5px 5px 0 5px;
+    text-align: center;
     color: var(--main-color);
     border: 1px solid #D9D9D9;
-    border-radius:50%;
+    border-radius: 50%;
 
 
 }
@@ -52,6 +53,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -87,18 +89,64 @@ a {
     box-sizing: border-box;
 }
 
+.hebergements-and-populaires .card-title, .card-subtitle {
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
     padding-bottom: 0;
 }
 
-.hebergements img {
-    width: 230px;
-    height: 120px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.hebergements .card {
+    height: 207.25px;
+    margin-top: 33px; /* pareil comme populaires - espace entre titre et card */
+    padding: 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    /* ombre portée sur la carte, ombre rectangulaire autour de l'élément,
+                                                     Décalage horizontal 0 px verticale 3px, flou 15px, étalement 0px,
+                                                     couleur noir avec une opacité 10% */
+}
+
+.hebergements .card-title {
+    margin-top: 0
+}
+
+.hebergements .card-subtitle {
+    margin: 0;
+}
+
+.cards img {
+    width: 100%;
+    height: 124px;
     object-fit: cover;
+    border: 5px solid #ffffff;
+    border-radius: 20px 20px 0 0;
+    box-sizing: border-box;
+}
+
+.cards .card-content {
+    width: 100%; /* width: 250.33px; = (cardcontent 250px/card250)*100 = 100%   */
+    height: 64.25px;
+    padding: 0 15px 0 15px; /* padding left et right */
+    display: flex;
+    flex-direction: column; /* flexbox - les cartes verticales avec un espace égale */
+    justify-content: space-between;
+}
+
+.cards a {
+    width: 30%;
+}
+
+.hebergements .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* espaces égaux entre les cartes*/
 }
 
 /****** Populaires ***********/
@@ -190,7 +238,7 @@ form {
 }
 
 input[type=text] {
-    border:none;
+    border: none;
     width: 195px;
     font-size: 18px;
     color: black;
@@ -204,18 +252,18 @@ input[type=text] {
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width:132px;
-    height:49px;
+    width: 132px;
+    height: 49px;
     font-size: 16px;
     padding: 15px 16px 15px 16px;
 }
 
 .form-container {
-    border:1px solid var(--main-bg-color);
-    display:flex;
-    gap:24px;
+    border: 1px solid var(--main-bg-color);
+    display: flex;
+    gap: 24px;
     width: 377px;
-    height:49px;
+    height: 49px;
     padding: 0;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -231,29 +279,48 @@ input[type=text] {
 }
 
 /*********** filter *************/
-.filter-container {
+.filter-bar {
+    max-width: 758px;
+    height: 50px;
+    gap: 15px;
     display: flex;
     align-items: center;
-    position:relative;
 }
 
-.filter-container ul {
+.filter-bar h2 {
+    font-size: 18px;
+}
+
+.filter-container {
+    width: 100%;
+    height: 50px;
     display: flex;
-    padding: 0;
-    list-style-type: none;
+    justify-content: space-between;
 }
 
-.filter-container li {
-    margin-left: 20px;
-    border: 3px solid var(--main-bg-color);
-    padding: 15px;
-    border-radius: 20px;
-    font-weight: bold;
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: #D9D9D9 solid 2px;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    cursor: pointer;
 }
 
-.filter-container li:hover {
-    background-color: var(--filter-bg-color);
+.filter p {
+    font-size: 18px;
+    font-weight: 700;
 }
+
+.filter i {
+    font-size: 22px;
+}
+
+.filter-container :hover {
+    background-color: #DEEBFF;
+}
+
 
 .filter-container a {
     cursor: pointer;
@@ -261,25 +328,27 @@ input[type=text] {
 
 /*********** end filter **********/
 /*********** Activity ************/
+/*** Activités ***/
 .activity-container {
 
     border-radius: 20px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap:10px;
     margin-bottom: 30px;
 }
 
 .activity-container img {
-    width: 250px;
-    height: 350px;
+    width: 100%;
+    height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
 
 .activity-container a {
-
+    width:80%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -298,11 +367,11 @@ input[type=text] {
 
 /*********** icon ***************/
 .i-2x {
-    width:40px;
+    width: 40px;
     background-color: #dedede;
     font-size: 25px;
     padding-left: 20px;
-    padding-top:12px;
+    padding-top: 12px;
     border-radius: 15px 0 0 15px;
     color: black;
 }
@@ -312,6 +381,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--main-bg-color);
+    margin-top: 30px;
 
 }
 
