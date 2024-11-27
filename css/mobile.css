@@ -3,12 +3,11 @@
         max-width: 767.98px;
         min-width: 320px;
         overflow-x: hidden;
-        overflow-y: scroll;
     }
     * { margin:0; }
 
     .main-container {
-        padding:0 21px 0 14px;
+        padding:0 14px 0 14px;
     }
 
     * {
