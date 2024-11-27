@@ -37,7 +37,13 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-
+.intro h1{
+    font-size:22px;
+    margin-bottom:10px;
+}
+.intro p{
+    margin-top:0;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -85,7 +91,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px 30px 0 30px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -96,20 +102,28 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    padding-bottom: 0;
+}
+
+.hebergements h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;                                               /* espace entre list card et afficher plus*/
+    margin-bottom: 0;
+
+}
+
+.hebergements .card-rating {
+    margin-top: 4px;
 }
 
 .hebergements .card {
     height: 207.25px;
-    margin-top: 33px; /* pareil comme populaires - espace entre titre et card */
-    padding: 0px;
+    margin-top: 33px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-    /* ombre portée sur la carte, ombre rectangulaire autour de l'élément,
-                                                     Décalage horizontal 0 px verticale 3px, flou 15px, étalement 0px,
-                                                     couleur noir avec une opacité 10% */
+    padding:0 0 10px 0 ;
+    box-shadow: 0 3px 15px 0 #0000001A;
 }
 
 .hebergements .card-title {
@@ -162,12 +176,12 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 25px;
+    margin-top: 33px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 150px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -277,7 +291,10 @@ input[type=text] {
     border: none;
     font-weight: bold;
 }
+.form-container,.filter-bar,.info{
+    margin-top:35px;
 
+}
 /*********** filter *************/
 .filter-bar {
     max-width: 758px;
@@ -335,7 +352,7 @@ input[type=text] {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    gap:10px;
+    gap: 10px;
     margin-bottom: 30px;
 }
 
@@ -348,7 +365,7 @@ input[type=text] {
 }
 
 .activity-container a {
-    width:80%;
+    width: 80%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -361,17 +378,16 @@ input[type=text] {
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /*********** icon ***************/
 .i-2x {
-    width: 40px;
+    width: 30px;
     background-color: #dedede;
-    font-size: 25px;
+    font-size: 14px;
     padding-left: 20px;
-    padding-top: 12px;
+    padding-top: 18px;
     border-radius: 15px 0 0 15px;
     color: black;
 }

@@ -1,41 +1,53 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
     body {
         max-width: 767.98px;
         min-width: 320px;
         overflow-x: hidden;
+        overflow-y: scroll;
     }
-    .main-container{
-        margin:0;
-        padding:1px;
+    * { margin:0; }
+
+    .main-container {
+        padding:0 21px 0 14px;
     }
+
     * {
         margin: 0;
     }
 
     .logo {
-        margin-bottom: 50px
+        width: 30%;
+        margin-bottom: 30px;
+        justify-self: center;
     }
-    .info{
-        margin-bottom:35px;
+
+    .info {
+        margin-bottom: 35px;
     }
-    .mt-30{
-        margin-top:30px;
+
+    .mt-30 {
+        margin-top: 30px;
     }
+
     /*********** nav *****************/
     nav li {
         width: 100%;
         margin: 0;
     }
+
     /*********** head-block *****************/
-    .head-block{
+    .head-block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap:20px;
+        gap: 20px;
     }
-    .head-block h1{
-        margin-top:35px;
+
+    .head-block h1 {
+        margin-top: 35px;
+        font-size: 22px;
     }
+
     /*********** form ****************/
     .form-container {
         width: 100%;
@@ -46,7 +58,6 @@
         display: block;
         color: white;
         padding: 5px;
-
     }
 
     .btn-submit {
@@ -55,15 +66,17 @@
         width: 49px;
         height: 49px;
     }
+
     input[type=text] {
-        width:60%;
+        width: 64%;
     }
+
     /*********** Activity ************/
     .activity-container {
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        padding:3px;
+        padding: 3px;
         gap: 20px;
     }
 
@@ -125,27 +138,29 @@
     .hebergements-and-populaires section {
         border-radius: 0;
         width: 100%;
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
-
 
 
     /*** Populaires ***/
     .populaire {
-        width:100%; }
-
+        width: 100%;
+    }
 
 
     /*** Hébergements ***/
     .hebergements-and-populaires .hebergements {
-        width:100%;
-        background: #FFFFFF; }
+        width: 100%;
+        background: #FFFFFF;
+    }
 
     .cards a {
-        width: 100%; }
+        width: 100%;
+    }
 
     .hebergements .cards {
-        flex-direction: column; }
+        flex-direction: column;
+    }
 
     /*********** Header **********/
     header {
