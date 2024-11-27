@@ -7,7 +7,7 @@
     * { margin:0; }
 
     .main-container {
-        padding:0 14px 0 14px;
+        padding:0px;
     }
 
     * {
@@ -53,6 +53,7 @@
     .form-container {
         width: 100%;
         justify-content: center;
+        padding: 0 10px 0 0px;
     }
 
     .form-container .i-search {
@@ -69,7 +70,7 @@
     }
 
    input[type=text] {
-        width: 64%;
+        width: 63%;
     }
 
     /*********** Activity ************/
@@ -101,34 +102,39 @@
     .filter-bar {
         display: flex;
         flex-direction: column;
-        height: 161px; /* fixe */
-        max-width: initial; /* Réinitialise la largeur max de la barre filtre à sa valeur initiale */
+        height: 161px;
+        max-width: initial;
+        padding: 0 15px 0 0;
     }
 
     .filter-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: flex;  flex-wrap: wrap; justify-content: space-between;
         align-items: center;
         row-gap: 20px;
-        height: 50px; /*fixe*/
-    }
+        height: 50px; /*fixe*/ }
 
-    .filter-bar h2 {
+
+    .filter-bar h2  {
         align-self: flex-start;
-    }
+        /* s'aligner au côté gauche du conteneur*/ }
+
 
     .filter {
         align-items: center;
         height: 50px; /*fixe*/
         width: 48%;
         box-sizing: border-box;
-    }
+
+        /* 48% = (165px/335px)*100 */
+        /* box-sizing : simplifier La taille d'élement - inclut auto la bordure et padding */ }
+
 
     .filter p {
         font-size: clamp(11px, 1vw, 14px);
-        margin: 0;
-    }
+        margin: 0px;
+        /* Clamp : max et min et valeur de réference 1% de largeur de viewport */
+        /* margin 0 assure qu'il y'aura pas de décalage et soit centré avec aligne-items */ }
+
 
     /*** Hébergements & populaires ***/
     .hebergements-and-populaires {
