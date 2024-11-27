@@ -2,7 +2,7 @@
     body {
         max-width: 767.98px;
         min-width: 320px;
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
     }
     * { margin:0; }
 
@@ -22,10 +22,12 @@
 
     .info {
         margin-bottom: 35px;
+        justify-self: flex-start;
+        padding-left:20px;
     }
 
-    .mt-30 {
-        margin-top: 30px;
+    .mt-60 {
+        margin-top: 60px;
     }
 
     /*********** nav *****************/
@@ -66,29 +68,29 @@
         height: 49px;
     }
 
-    input[type=text] {
+   input[type=text] {
         width: 64%;
     }
 
     /*********** Activity ************/
     .activity-container {
-        border-radius: 20px;
         display: flex;
         flex-direction: column;
-        padding: 3px;
-        gap: 20px;
+        justify-items: initial;
+        gap: 30px;
+        padding:0 14px 0 14px;
     }
 
     .activity-container img {
         width: 100%;
-        height: 250px;
+        height: 141px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .activity-container .card {
         background-color: white;
-        width: 90%;
+
     }
 
     .activity-container a {
@@ -137,13 +139,7 @@
     .hebergements-and-populaires section {
         border-radius: 0;
         width: 100%;
-        padding-bottom: 10px;
-    }
-
-
-    /*** Populaires ***/
-    .populaire {
-        width: 100%;
+        padding-bottom: 30px;
     }
 
 
