@@ -59,6 +59,7 @@
     .form-container {
         width: 95%;
         justify-content: center;
+        border:none;
     }
 
     .form-container .i-search {
