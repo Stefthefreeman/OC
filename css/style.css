@@ -370,7 +370,7 @@ input[type=text] {
 }
 
 .activity-container .card-txt {
-    margin-left: 15px;
+    padding-left:10px;
 
 }
 
@@ -416,5 +416,7 @@ footer {
 .footer-block li {
     margin-top: 10px;
 }
-
+.footer li:hover{
+    color: var(--main-color);
+}
 
