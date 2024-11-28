@@ -28,7 +28,7 @@
     .info {
         margin-bottom: 35px;
         justify-self: flex-start;
-        padding-left: 20px;
+
     }
 
     .mt-60 {
@@ -47,7 +47,7 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 10px;
-        padding:0 14px 0 14px;
+        padding:0 20px 0 20px;
     }
 
     .head-block h1 {
@@ -73,10 +73,6 @@
         width: 49px;
         height: 49px;
     }
-
-    /*input[type=text] {
-        width: 63%;
-    }*/
 
     /*********** Activity ************/
     .activity-container {
