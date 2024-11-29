@@ -37,13 +37,16 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-.intro h1{
-    font-size:22px;
-    margin-bottom:10px;
+
+.intro h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
-.intro p{
-    margin-top:0;
+
+.intro p {
+    margin-top: 0;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -107,7 +110,7 @@ a {
 .hebergements h3 {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 30px;                                               /* espace entre list card et afficher plus*/
+    margin-top: 30px; /* espace entre list card et afficher plus*/
     margin-bottom: 0;
 
 }
@@ -122,7 +125,7 @@ a {
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    padding:0 0 10px 0 ;
+    padding: 0 0 10px 0;
     box-shadow: 0 3px 15px 0 #0000001A;
 }
 
@@ -291,10 +294,12 @@ input[type=text] {
     border: none;
     font-weight: bold;
 }
-.form-container,.filter-bar,.info{
-    margin-top:35px;
+
+.form-container, .filter-bar, .info {
+    margin-top: 35px;
 
 }
+
 /*********** filter *************/
 .filter-bar {
     max-width: 758px;
@@ -338,16 +343,13 @@ input[type=text] {
     background-color: #DEEBFF;
 }
 
-
 .filter-container a {
     cursor: pointer;
 }
 
 /*********** end filter **********/
 /*********** Activity ************/
-/*** Activités ***/
 .activity-container {
-
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -370,7 +372,7 @@ input[type=text] {
 }
 
 .activity-container .card-txt {
-    padding-left:10px;
+    padding-left: 10px;
 
 }
 
@@ -416,7 +418,8 @@ footer {
 .footer-block li {
     margin-top: 10px;
 }
-.footer li:hover{
+
+.footer li:hover {
     color: var(--main-color);
 }
 

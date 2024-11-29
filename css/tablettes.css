@@ -1,9 +1,8 @@
 /*** media queries ***/
 /* medium devices */
-@media (min-width : 768px ) and (max-width : 1024px ) {
+@media (min-width: 768px ) and (max-width: 1024px ) {
 
     /* général */
-
     body {
         max-width: 1024px;
         min-width: 768px;
@@ -13,17 +12,14 @@
     }
 
 
-
     /* Filtres */
-    .filter-bar{
+    .filter-bar {
         display: block;
         height: fit-content;
 
         /* h:91px; */
         /* active l'affichage en bloc pour empiler ( h2 "Filtres" et le conteneur des filtres) verticalement */
     }
-
-
 
 
     /* hébergements et les plus populaires */
@@ -46,7 +42,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom:30px;
+        padding-bottom: 30px;
     }
 
     .populaires-cards a {
@@ -67,7 +63,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
-        gap:15px;
+        gap: 15px;
     }
 
     .activity-container a {
