@@ -419,7 +419,7 @@ footer {
     margin-top: 10px;
 }
 
-.footer li:hover {
+footer li:hover {
     color: var(--main-color);
 }
 
