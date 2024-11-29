@@ -14,11 +14,7 @@
     .filter-bar {
         display: block;
         height: fit-content;
-
-        /* h:91px; */
-        /* active l'affichage en bloc pour empiler ( h2 "Filtres" et le conteneur des filtres) verticalement */
     }
-
 
     /* hébergements et les plus populaires */
     .hebergements-and-populaires {
@@ -56,7 +52,7 @@
     }
 
 
-    /* Activités */
+    /* Activity */
     .activity-container {
         display: flex;
         justify-content: space-between;
