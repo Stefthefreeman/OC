@@ -6,9 +6,7 @@
     body {
         max-width: 1024px;
         min-width: 768px;
-        overflow-x: hidden; /* Scroll Horizontale */
-        /* Pour masquer le débordement horizontal du contenu */
-        /* Aucune barre de défilement horizontale ne sera affichée pour accéder au contenu masqué  */
+        overflow-x: hidden;
     }
 
 
