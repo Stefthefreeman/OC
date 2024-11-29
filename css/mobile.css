@@ -30,10 +30,10 @@
     .info {
         margin-bottom: 35px;
         justify-self: flex-start;
-        padding-left:14px;
-
     }
-
+    .info-activity{
+        padding-left:14px;
+    }
     .mt-60 {
         margin-top: 60px;
     }
