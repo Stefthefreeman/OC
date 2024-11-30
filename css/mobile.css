@@ -62,7 +62,7 @@
 
     /*********** form ****************/
     .form-container {
-        width: 100%;
+        width: 90%;
         justify-content: center;
         border: none;
 
@@ -75,6 +75,7 @@
     }
 
     .btn-submit {
+        left:-20px;
         border-radius: 15px;
         padding: 5px 10px;
         width: 49px;
@@ -148,6 +149,7 @@
         border-radius: 0;
         width: 100%;
         padding-bottom: 30px;
+
     }
 
 
