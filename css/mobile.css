@@ -2,11 +2,25 @@
     body {
         max-width: 767.98px;
         min-width: 320px;
-        overflow-x: hidden;
     }
 
+    body::-webkit-scrollbar {
+        width: 2px;
+        height: 3px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
     * {
         margin: 0;
+        padding: 0;
+
     }
 
     header {
@@ -42,7 +56,6 @@
 
     /*********** nav *****************/
     nav li {
-        width: 100%;
         margin: 0;
     }
 
@@ -59,12 +72,19 @@
         margin-top: 35px;
         font-size: 22px;
     }
-
+    /*********** Info bar ************/
+    .info-bar{
+        margin:30px 0 30px 0 !important;
+    }
+    .info{
+        margin:30px 0 30px 0;
+    }
     /*********** form ****************/
     .form-container {
         width: 100%;
         justify-content: center;
         border: none;
+        margin-top:20px;
     }
 
     .form-container .i-search {
@@ -74,7 +94,7 @@
     }
 
     .btn-submit {
-        transform: translateX(-15px);
+        /*transform: translateX(-15px)*/;
         border-radius: 15px;
         padding: 5px 10px;
         width: 49px;
@@ -86,7 +106,7 @@
         display: flex;
         flex-direction: column;
         justify-items: initial;
-        gap: 30px;
+
     }
 
     .activity-container img {
@@ -94,6 +114,7 @@
         height: 141px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        padding:0;
     }
 
     .activity-container a {
@@ -106,6 +127,7 @@
         flex-direction: column;
         height: 161px;
         max-width: initial;
+        margin-top:20px;
     }
 
     .filter-container {
@@ -115,7 +137,6 @@
         align-items: center;
         row-gap: 20px;
         height: 50px;
-
     }
 
 
@@ -148,7 +169,6 @@
         border-radius: 0;
         width: 100%;
         padding-bottom: 30px;
-
     }
 
 
@@ -186,7 +206,7 @@
     }
 
     .cards a {
-        margin-bottom: 15px;
+        gap:10px;
     }
 
     /********** Nav *************/

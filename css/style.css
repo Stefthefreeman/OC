@@ -70,7 +70,7 @@ a {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card-title {
@@ -98,7 +98,7 @@ a {
     box-sizing: border-box;
 }
 
-.hebergements-and-populaires .card-title, .card-subtitle {
+.hebergements-and-populaires .card-title, .card-subtitle,.activity {
     font-size: clamp(12px, 1.2vw, 16px);
 }
 
@@ -156,16 +156,20 @@ a {
 }
 
 .cards a {
-    width: 30%;
+    flex: 1 0 27%;
 }
 
 .hebergements .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap:30px;
     /* espaces égaux entre les cartes*/
 }
-
+.showMore{
+    font-size: 18px;
+    font-weight: bold;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -237,6 +241,7 @@ nav li {
 .active:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 20px;
+    color: var(--main-color);
 }
 
 nav > * {
@@ -294,9 +299,11 @@ input[type=text] {
     border: none;
     font-weight: bold;
 }
-
+.info-bar{
+    margin:50px 0 50px 0;
+}
 .form-container, .filter-bar, .info {
-    margin-top: 35px;
+    margin-top: 50px;
 
 }
 
@@ -354,21 +361,25 @@ input[type=text] {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
     margin-bottom: 30px;
 }
-
+.activity-container article{
+    padding:0 0 7px 0;
+}
 .activity-container img {
     width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+
 }
 
 .activity-container a {
     width: 80%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
 }
 
 .activity-container .card-txt {
@@ -402,7 +413,9 @@ footer {
     margin-top: 30px;
 
 }
-
+footer h2{
+    font-size:16px;
+}
 .footer-block {
     display: flex;
     flex-direction: column;
